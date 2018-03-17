@@ -1,0 +1,31 @@
+# @@@LICENSE
+#
+# Copyright (c) 2015 LG Electronics, Inc.
+#
+# Unless otherwise specified or set forth in the NOTICE file, all content,
+# including all source code files and documentation files in this repository are:
+# Confidential computer software. Valid license from LG required for
+# possession, use or copying.
+#
+# LICENSE@@@
+
+# Common Eclipse project files
+.project
+.cproject
+.settings
+.pydevproject
+
+# Ignore all build directories and their trees.
+/BUILD*
+/build/*
+oe-logs
+oe-workdir
+
+# sublime project
+*.sublime-project
+*.sublime-workspace
+
+# vi temp file
+.*.swp
+tags
+*.patch

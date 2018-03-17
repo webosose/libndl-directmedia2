@@ -1,0 +1,19 @@
+{
+    "exeName":"@WEBOS_INSTALL_BINDIR@/esplayer-test",
+    "allowedNames": ["com.webos.rm.client.*","com.webos.esplayer-test"],
+    "type": "regular",
+    "permissions": [
+        {
+            "service":"com.webos.rm.client.*",
+            "inbound":["com.webos.media"],
+            "outbound":["com.webos.media"]
+        },
+        {
+            "service":"com.webos.esplayer-test",
+            "inbound":["com.webos.service.videosinkmanager",
+                        "com.webos.service.tv.display"],
+            "outbound":["com.webos.service.videosinkmanager",
+                        "com.webos.service.tv.display"]
+        }
+    ]
+}

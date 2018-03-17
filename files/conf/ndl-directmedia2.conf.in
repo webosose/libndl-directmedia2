@@ -1,0 +1,33 @@
+{
+    "outputs" : [
+        {
+            "name" : "ndl-directmedia2-log",
+            "file" : "@WEBOS_INSTALL_LOGDIR@/ndl-directmedia2.log",
+            "maxSize" : 100000,
+            "rotations" : 1
+        }
+    ],
+
+    "contexts" : [
+        {
+            "name" : "ndl.directmedia2",
+            "level" : "debug",
+            "logProcessIds" : true,
+            "logThreadIds" : true,
+            "logToConsole" : false,
+            "rules" : [
+                {"filter" : "*.*", "output" : "ndl-directmedia2-log"}
+            ]
+        },
+        {
+            "name" : "omx-components",
+            "level" : "debug",
+            "logProcessIds" : true,
+            "logThreadIds" : true,
+            "logToConsole" : false,
+            "rules" : [
+                {"filter" : "*.*", "output" : "ndl-directmedia2-log"}
+            ]
+        }
+    ]
+}
