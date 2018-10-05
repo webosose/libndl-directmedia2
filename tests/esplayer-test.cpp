@@ -471,12 +471,6 @@ void EsplayerContext::esplayer_callback(NDL_ESP_EVENT event, void* playerdata)
             {
                 NDL_ESP_VIDEO_INFO_T* data = (NDL_ESP_VIDEO_INFO_T*)playerdata;
                 printf("[Test] Receive video resolution. width : %d, height : %d\n", data->width, data->height);
-                if (!no_subtitle && lunaService)
-                {
-                    char connectionId[CONNECTION_ID_BUFFER_SIZE] = "";
-                    NDL_EsplayerGetConnectionId(esp_handle, connectionId, sizeof(connectionId));
-                    lunaService->enableSubtitle(connectionId);
-                }
                 break;
             }
     }

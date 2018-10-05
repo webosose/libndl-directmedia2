@@ -81,10 +81,3 @@ bool LunaServiceCall::call(const char* uri, const char* payload) {
     printf("LSCall succeed\n");
     return true;
 }
-
-bool LunaServiceCall::enableSubtitle(const char* pipelineId) {
-    const char* uri = "luna://com.webos.service.tv.subtitle/enableSubtitle";
-    char payload[64];
-    sprintf(payload, "{\"pipelineId\":\"%s\"}", pipelineId);
-    return call(uri, payload);
-}

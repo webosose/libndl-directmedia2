@@ -32,7 +32,6 @@ class LunaServiceCall {
         LunaServiceCall();
         ~LunaServiceCall();
         bool call(const char* uri, const char* payload);
-        bool enableSubtitle(const char* pipelineId);
 
     private:
         LSHandle* handle_ = nullptr;
